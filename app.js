@@ -39,95 +39,57 @@ function createCountryCard(data) {
 
   //name
   const name = document.createElement("div");
-  name.textContent = "Name:";
-  const nameSpan = document.createElement("span");
-  nameSpan.textContent = country.name;
-  name.append(nameSpan);
+  name.innerHTML = `Name: <span>${country.name}</span>`;
 
   //native name
   const nativeName = document.createElement("div");
-  nativeName.textContent = "Native name:";
-  const nativeNameSpan = document.createElement("span");
-  nativeNameSpan.textContent = country.native_name;
-  nativeName.append(nativeNameSpan);
+  nativeName.innerHTML = `Native name: <span>${country.native_name}</span>`;
 
   //capital
   const capital = document.createElement("div");
-  capital.textContent = "Capital:";
-  const capitalSpan = document.createElement("span");
-  capitalSpan.textContent = country.capital;
-  capital.append(capitalSpan);
+  capital.innerHTML = `Capital: <span>${country.capital}</span>`;
 
   //alpha2code
   const alpha2code = document.createElement("div");
-  alpha2code.textContent = "Alpha2code:";
-  const alpha2codeSpan = document.createElement("span");
-  alpha2codeSpan.textContent = country.alpha2code;
-  alpha2code.append(alpha2codeSpan);
+  alpha2code.innerHTML = `Alpha2code: <span>${country.alpha2code}</span>`;
 
   //alpha3code
   const alpha3code = document.createElement("div");
-  alpha3code.textContent = "Alpha3code:";
-  const alpha3codeSpan = document.createElement("span");
-  alpha3codeSpan.textContent = country.alpha3code;
-  alpha3code.append(alpha3codeSpan);
+  alpha3code.innerHTML = `Alpha3code: <span>${country.alpha3code}</span>`;
 
   //language
   const language = document.createElement("div");
-  language.textContent = "Language:";
-  const languageSpan = document.createElement("span");
-  languageSpan.textContent = country.languages[0].name;
-  language.append(languageSpan);
+  language.innerHTML = `Language: <span>${country.languages[0].name}</span>`;
 
-  //   language native name
+  //language native name
   const languageNative = document.createElement("div");
-  languageNative.textContent = "Language native name:";
-  const languageNativeSpan = document.createElement("span");
-  languageNativeSpan.textContent = country.languages[0].native_name;
-  languageNative.append(languageNativeSpan);
+  languageNative.innerHTML = `Language native name:: <span>${country.languages[0].native_name}</span>`;
 
   //region
   const region = document.createElement("div");
-  region.textContent = "Region:";
-  const regionSpan = document.createElement("span");
-  regionSpan.textContent = country.region;
-  region.append(regionSpan);
+  region.innerHTML = `Region: <span>${country.region}</span>`;
 
   //population
   const population = document.createElement("div");
-  population.textContent = "Population:";
-  const populationSpan = document.createElement("span");
-  populationSpan.textContent = country.population;
-  population.append(populationSpan);
+  population.innerHTML = `Population: <span>${country.population}</span>`;
 
   //area
   const area = document.createElement("div");
-  area.textContent = "Area:";
-  const areaSpan = document.createElement("span");
-  areaSpan.textContent = country.area;
-  area.append(areaSpan);
+  area.innerHTML = `Area: <span>${country.area}</span>`;
 
   //borders
   const borders = document.createElement("div");
-  borders.textContent = "Borders:";
-  const bordersSpan = document.createElement("span");
-  bordersSpan.textContent = country.borders;
-  borders.append(bordersSpan);
+  borders.innerHTML = `Borders: <span>${country.borders}</span>`;
 
   //Timezones
   const timezones = document.createElement("div");
-  timezones.textContent = "Timezones:";
-  const timezonesSpan = document.createElement("span");
-  timezonesSpan.textContent = country.timezones;
-  timezones.append(timezonesSpan);
+  timezones.innerHTML = `Timezones: <span>${country.timezones}</span>`;
 
   //Calling code
   const callingCode = document.createElement("div");
-  callingCode.textContent = "Calling Code:";
-  const callingCodeSpan = document.createElement("span");
-  callingCodeSpan.textContent = country.calling_codes;
-  callingCode.append(callingCodeSpan);
+  callingCode.innerHTML = `Calling Code: <span>${country.calling_codes}</span>`;
 
+  //appending
   countryCard.append(
     name,
     nativeName,
