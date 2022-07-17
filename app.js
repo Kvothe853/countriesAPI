@@ -27,15 +27,20 @@ const fetchingAPI = (data) => {
     .then((response) => response.json())
     .then((result) => createCountryCard(result))
     .catch((error) => console.log("error", error));
-
   const main = (document.querySelector("main").innerHTML = "");
 };
-
 function createCountryCard(data) {
   const country = data[0];
   //
   const countryCard = document.createElement("div");
   countryCard.className = "country-card";
+
+  //image
+  const image = document.createElement("div");
+  const img = document.createElement("img");
+  img.src = `https://flagcdn.com/80x60/${country.alpha2code.toLowerCase()}.png`;
+  img.setAttribute("alt", `${country.name} flag image`);
+  image.append(img);
 
   //name
   const name = document.createElement("div");
@@ -91,6 +96,7 @@ function createCountryCard(data) {
 
   //appending
   countryCard.append(
+    image,
     name,
     nativeName,
     capital,

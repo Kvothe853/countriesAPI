@@ -67,6 +67,12 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.country-card div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
 .country-card div span {
   max-width: 200px;
   overflow-wrap: break-word;

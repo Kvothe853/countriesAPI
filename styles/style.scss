@@ -70,6 +70,12 @@ main {
     border-bottom: solid 1px #888;
     display: flex;
     justify-content: space-between;
+    &:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 24px;
+    }
     span {
       max-width: 200px;
       overflow-wrap: break-word;
