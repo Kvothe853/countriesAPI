@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-width: 430px;
+}
+
+header {
+  background-color: #ddd;
+  margin-top: 15px;
+  max-width: 40%;
+  min-width: 400px;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+form label {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color: #333;
+}
+form select {
+  color: #333;
+  padding: 2px 4px;
+  margin: 5px 0;
+}
+form select:focus {
+  outline: none;
+}
+form button {
+  padding: 8px;
+  cursor: pointer;
+}
+form button:focus {
+  outline: none;
+}
+
+main {
+  max-width: 40%;
+  min-width: 400px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #eee;
+  border-radius: 0 0 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.country-card div {
+  padding: 8px 5px;
+  border-bottom: solid 1px #888;
+  display: flex;
+  justify-content: space-between;
+}
+.country-card div span {
+  max-width: 200px;
+  overflow-wrap: break-word;
+  color: green;
+  text-align: right;
+}/*# sourceMappingURL=style.css.map */
